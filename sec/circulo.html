@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="icono.png">
+  <title>Menu - Area de ún Círculo</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+  <header>
+    <div>
+      <img src="#" alt="">
+      <nav>
+          <ul style="font-size: 20px;">
+            <li><a href="/index.html">Inicio &nbsp</a>
+            <li><a href="#">Cálculos &nbsp<img src="arrow.png" alt="" width="8px" height="8px"></a>
+            <div class="dropdown">
+              <div class="d-flex columnas1" >
+                <a href="Menu.html" class="p4">Calculadora</a>
+                <hr>
+                <a href="Distancia.html" class="p4">Distancia entre dos puntos</a>
+                <hr>
+                <a href="IMC.html" class="p4">Indice de masa corporal</a>
+              </div>
+            </div>
+          </li>
+            <li><a href="#">Conversiones &nbsp<img src="arrow.png" alt="" width="8px" height="8px"></a>
+            <div class="dropdown">
+              <div class="d-flex columnas">
+                <a href="EUR-MX.html" class="p4">Euros a pesos</a>
+                <hr>
+                <a href="Millas.html" class="p4">Millas a metros</a>
+                <hr>
+                <a href="Grados.html" class="p4">°C a °F</a>
+              </div>
+            </div>
+            </li>
+            <li><a href="#">Areas &nbsp<img src="arrow.png" alt="" width="8px" height="8px"></a>
+            <div class="dropdown">
+              <div class="d-flex columnas2">
+                <a href="trapecio.html" class="p4">Trapecio</a>
+                <hr>
+                <a href="circulo.html" class="p4">Círculo</a>
+              </div>
+            </div>
+          </li>
+            <li><a href="#">Volúmenes &nbsp<img src="arrow.png" alt="" width="8px" height="8px"></a>
+            <div class="dropdown">
+              <div class="d-flex columnas">
+                <a href="prisma.html" class="p4">Prisma rectangular</a>
+              </div>
+            </div>
+          </li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+    <br><br><br><br><br><br>
+  <form align="center" method="get" id="indicemasa">
+<table align="center" border=1 bordercolor="white" width="50%">
+<tr>
+<td colspan="2">
+<span style="font-size: 60px; line-height: normal;color: #06BAF2;"><font face="monospace">Area de un círculo</span></td>
+</tr>
+<tr>
+<td><p style="font-size: 20px; color: white; font-family: monospace;">Radio del círculo: <input type="number" id="radio" min="0" style="font-size: 20px;"></p></td>
+<td align="center"><br><input type="button" class="button button4" value="Convertir" onclick="promediar()">
+<br><br><br>
+</tr>
+
+<tr>
+<td width="50%"><p style="font-size: 20px; color: white; font-family:monospace;">Area del círculo:  <input type="text" id="area" disabled style="font-size: 20px; background-color: #3B3A38; color: white;"></p></td>
+  <td width="100%"><br><input type="reset" class="button button5" value="Limpiar"><br><br></td>
+</tr>
+</table>
+</form>
+<script>
+function promediar(){
+var radio = Number(document.getElementById("radio").value);
+var area = (radio*radio)*3.14159;
+document.getElementById("area").value = area;
+}
+
+</script>
+</body>
+</html>
